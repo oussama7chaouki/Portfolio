@@ -54,7 +54,9 @@ body{
     margin:0px 30px;
     margin-top: 68px;
 }
-
+section{
+    min-height: 100vh;
+}
 img{
     max-width: 100%;
     display: inline-block;
@@ -351,6 +353,13 @@ margin: 70px 20px 0 20px;
         display: block;
         position:fixed;
         z-index:9999;
+        filter: invert(100%);
+SCALE: 1.5;
+TRANSLATE: 6px;
+transform: translateY(3px);
+    }
+    #ec1,#ec2{
+        display: none;
     }
     .navbar{
         display:none;
@@ -391,11 +400,12 @@ p#para{
 }
 .flex{
     flex-direction: column;
+    gap:1em;
 }
 button#btn {
     grid-area: 1/1/2/2;
     height:2em;
-    width:70%;
+    /* width:70%; */
     transform: translate(50px,70px);
 }
 .colorchange:hover,#btn:hover {
